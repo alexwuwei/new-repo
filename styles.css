@@ -1,9 +1,14 @@
 .right {
   color: green;
   background-color: orange;
+  font-weight: bold;
+
+
 }
 
 .wrong {
   color: red;
+  font-weight: bold;
   background-color: yellow;
+
 }

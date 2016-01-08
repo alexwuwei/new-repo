@@ -10,6 +10,7 @@ if (answer2==='YES'|| answer2==='Y'){
 } else {
     alert('Sorry, you must type Yes or NO')
 }
+
 var res1 = document.getElementById('resultOne');
 var res2 = document.getElementById('resultTwo');
 var res3 = document.getElementById('resultThree');
@@ -21,7 +22,6 @@ var quesData = [ ['Am I 30 years old?', 'Y', 'YES', 'That is correct', 'You are 
 
 
 for (var i = 0; i < quesData.length; i++) {
-  // questions();
   questions()
 }
 
@@ -38,6 +38,7 @@ function questions () {
     console.log("answer was wrong");
     quesData[i] [5].textContent = quesData[i] [4];
     quesData[i] [5].className = 'wrong';
+
   };
 }
 
