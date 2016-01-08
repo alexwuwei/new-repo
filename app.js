@@ -16,7 +16,7 @@ var res3 = document.getElementById('resultThree');
 var res4 = document.getElementById('resultFour');
 
 
-var quesData = [ ['Am I 30 years old?', 'Y', 'YES', 'That is correct', 'You are so wrong oh my god', res1], ['Do I have a cat?', 'N', 'NO', 'You are right', 'You are wrong', res2], ['Do I live in Kent?', 'Y', 'YES', 'You are right', 'You are wrong', res3] ];
+var quesData = [ ['Am I 30 years old?', 'Y', 'YES', 'That is correct', 'You are so wrong oh my god', res1], ['Do I have a cat?', 'N', 'NO', 'You are right', 'You are wrong', res2], ['Do I live in Kent?', 'Y', 'YES', 'You are right', 'You are wrong', res3], ['Was I born in Seattle', 'N', 'NO', 'You are right', 'You are wrong', res4] ];
 
 
 
@@ -32,10 +32,12 @@ function questions () {
     //correct
     console.log("answer was right");
     quesData[i] [5].textContent = quesData[i] [3];
+    quesData[i] [5].className = 'right';
   } else {
     //wrong answer
     console.log("answer was wrong");
     quesData[i] [5].textContent = quesData[i] [4];
+    quesData[i] [5].className = 'wrong';
   };
 }
 
